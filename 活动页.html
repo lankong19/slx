@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>元旦热门活动</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+	  body {
+		  height: 900px;
+		  width: 1350px;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+ }
+#bx{
+	background-image: url('25535374_101628292000_2.jpg');
+}
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 30px;
+  text-align: center;
+  background-image: url('屏幕截图 2024-01-04 220928.png');
+}
+
+header h1 {
+  margin: 0;
+}
+
+.intro, .details, .highlights, .schedule, .tickets, footer {
+  background-color: #f4f4f4;
+  padding: 20px;
+  margin-bottom: 30px;
+  opacity: 0.8;
+}
+
+.intro h2, .details h2, .highlights h2, .schedule h2, .tickets h2, footer h2 {
+  margin-top: 0;
+  opacity: 0.8;
+}
+
+.intro p, .details p, .highlights ul, .schedule ul, .tickets p, footer p {
+  margin: 0;
+  opacity: 0.8;
+}
+
+.intro p span, .details p span, .tickets p span {
+  font-weight: bold;
+  opacity: 0.8;
+}
+
+.highlights ul li {
+  list-style-type: circle;
+  padding-left: 20px;
+  opacity: 0.8;
+}
+
+.schedule ul li {
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  }
+  </style>
+</head>
+<body>
+	<div id="bx">
+  <header>
+    <h1>端午热门活动</h1>
+  </header>
+  <section class="intro">
+    <h2>活动介绍</h2>
+    <p>
+      端午热门活动是一个令人兴奋的活动，旨在为社区提供娱乐和互动的机会。我们将为参与者提供各种有趣的活动和节目，以及机会与其他人建立联系。无论你是朋友们一起来还是单独参加，我们都保证你会度过一个难忘的时刻！
+    </p>
+  </section>
+  <section class="details">
+    <h2><p id="time"></p></h2>
+    <p>
+      日期: <span>2024年6月18日</span><br>
+      时间: <span>0：00</span>
+    </p>
+    <h2>地点</h2>
+    <p>
+      地点: <span>工贸大街</span><br>
+      地址: <span>工贸花园2号楼888室</span>
+    </p>
+  </section>
+  <section class="highlights">
+    <h2>活动亮点</h2>
+    <ul>
+      <li>端午惊喜特价</li>
+      <li>全面发放红包</li>
+      <li>一亿现金瓜分</li>
+      <li>参与有奖</li>
+    </ul>
+  </section>
+  <section class="schedule">
+    <h2>活动安排</h2>
+    <ul>
+      <li>[2024-6-10] [特价活动预热]</li>
+      <li>[2024-6-12] - [第一波预热]</li>
+      <li>[2024-6-13] - [第二波预热]</li>
+      <li>[2024-6-18] - [一亿现金瓜分]</li>
+    </ul>
+  </section>
+  <section class="tickets">
+    <h2>关注本网站有奖</h2>
+    <p>
+      关注方式<span>公众号</span><br>
+     
+      备注: <span>即日起即可参与</span>
+    </p>
+  </section>
+  <footer>
+    <h2>联系方式</h2>
+    <p>
+      如果您对本次活动有任何疑问或需要帮助，请随时联系我们。以下是我们的联系方式：
+      <br>
+      电话: <span>132+++++</span><br>
+      邮箱: <span> @1937723116qq.com</span><br>
+      网站:www.baidu.com<br>
+      社交媒体: <a href="[社交媒体链接]">[社交媒体链接]</a>
+    </p>
+  </footer>
+  </div>
+</body>
+</html>
+<script>
+function showTime() {
+  var now = new Date();
+  var hour = now.getHours();
+  var minute = now.getMinutes();
+  var second = now.getSeconds();
+  var timeStr = hour + ":" + minute + ":" + second;
+  document.getElementById("time").innerHTML = timeStr;
+}
+setInterval(showTime, 1000); // 每秒钟更新时间
+</script>
